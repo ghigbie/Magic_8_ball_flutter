@@ -8,23 +8,25 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int displayNumber = Random().nextInt(5)+1;
+  int ballNumber = Random().nextInt(5)+1;
 
   void changeDisplayMessage(){
-    displayNumber = Random().nextInt(5)+1;
-    print('Display number changed: $displayNumber');
+    ballNumber = Random().nextInt(5)+1;
+    print('Display number changed: $ballNumber');
   }
 
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: FlatButton(
-        onPressed: (){
-          setState((){
-            changeDisplayMessage();
-          });
-        },
-        child: Image.asset('images/'),
+      child: Expanded(
+          child: FlatButton(
+          onPressed: (){
+            setState((){
+              changeDisplayMessage();
+            });
+          },
+          child: Image.asset('images/ball$ballNumber.png'),
+        ),
       )
     );
   }
