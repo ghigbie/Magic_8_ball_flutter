@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
+import 'constants.dart';
 
 void main() => runApp(Magic8Ball());
 
@@ -11,11 +12,12 @@ class Magic8Ball extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text('Magic 8 Ball'),
+          title: Text(APP_NAME),
           backgroundColor: Colors.blueGrey,
         ),
-        body: HomePage()
-      );
-  },
+        body: HomePage(),
+      ),
+    );
+  }
 }
 
