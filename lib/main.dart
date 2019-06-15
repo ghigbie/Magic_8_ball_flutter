@@ -12,7 +12,7 @@ class Magic8Ball extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text(APP_NAME),
+          title: Text(APP_TITLE_MESSAGE),
           backgroundColor: Colors.blueGrey,
         ),
         body: HomePage(),

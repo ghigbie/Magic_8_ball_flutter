@@ -1,1 +1,1 @@
-const APP_NAME = 'Magic 8 Ball';
+const APP_TITLE_MESSAGE = 'Ask Me Anything';

@@ -18,16 +18,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Expanded(
-          child: FlatButton(
-          onPressed: (){
-            setState((){
-              changeDisplayMessage();
-            });
-          },
-          child: Image.asset('images/ball$ballNumber.png'),
-        ),
-      )
+      child: FlatButton(
+        onPressed:(){
+          setState((){
+            changeDisplayMessage();
+          });
+        },
+        child: Image.asset('images/ball$ballNumber.png'),
+      ),
     );
   }
 }
